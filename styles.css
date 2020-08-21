@@ -1,0 +1,9 @@
+.container{font-size: 1.5em; min-height: 300px; width: 100%; background: LightGray; display: grid; grid-template-columns: 1fr; grid-template-rows: 50px auto 1fr auto; grid-gap: 10px 10px; grid-template-areas: "header""advert""content""footer"}
+@media (min-width: 500px){.container{grid-template-columns: auto 1fr; grid-template-rows: auto 1fr auto; grid-template-areas: "advert header""advert content""advert footer"}}
+.item1 {background: LightSkyBlue; grid-area: header}
+.item2 {background: LightSalmon; grid-area: advert}
+.item3 {background: BlanchedAlmond; display: grid; grid-template-columns: auto 1fr; grid-template-rows: 1fr auto; grid-template-areas: "picture text""imagefooter text";}
+.itemI {border: 5px solid PaleGreen; grid-area: picture}
+.itemII {border: 5px solid PaleTurquoise; grid-area: text}
+.itemIII {border: 5px solid OrangeRed; grid-area: imagefooter}
+.item4 {background: Lightpink; grid-area: footer}
